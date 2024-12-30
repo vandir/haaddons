@@ -52,3 +52,4 @@ schema:
   otbr_firewall: bool
 stage: experimental
 startup: services
+
