@@ -235,6 +235,15 @@ RUN \
         -DOTBR_BORDER_ROUTING=ON \
         -DOTBR_REST=ON \
         -DOTBR_BACKBONE_ROUTER=ON \
+        -DOTBR_TREL=ON \
+        -DOTBR_NAT64=ON \
+        -DOT_POSIX_NAT64_CIDR="192.168.255.0/24" \
+        -DOTBR_DNS_UPSTREAM_QUERY=ON \
+        -DOT_CHANNEL_MONITOR=ON \
+        -DOT_COAP=OFF \
+        -DOT_COAPS=OFF \
+        -DOT_DNS_CLIENT_OVER_TCP=OFF \
+        -DOT_THREAD_VERSION=1.3 \
         && cd build/otbr/ \
         && ninja \
         && ninja install) \
